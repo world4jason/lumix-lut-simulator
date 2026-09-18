@@ -1,0 +1,469 @@
+{
+  "generatedAt": "2026-09-17T08:33:47.138Z",
+  "edge": 720,
+  "fallbackId": "s9",
+  "samples": [
+    {
+      "id": "vlog-portrait",
+      "name": "S5II portrait",
+      "note": "Skin in natural light, recorded as V-Log",
+      "origin": "camera-vlog",
+      "before": "/sample/_before/vlog-portrait.webp",
+      "beforeLog": "/sample/_before/vlog-portrait-log.webp",
+      "beforeNeutral": "/sample/_before/vlog-portrait-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/vlog-portrait-before.png",
+        "sources/library/_samples/vlog-portrait-before-vlog.png"
+      ]
+    },
+    {
+      "id": "s9",
+      "name": "S9 street",
+      "note": "Developed from a DC-S9 RAW — mostly neutral stone and white render",
+      "origin": "raw",
+      "before": "/sample/_before/s9.webp",
+      "beforeLog": "/sample/_before/s9-log.webp",
+      "beforeNeutral": "/sample/_before/s9-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/s9-before.png",
+        "sources/library/_samples/s9-before-vlog.png"
+      ]
+    },
+    {
+      "id": "vlog-skin",
+      "name": "S5II skin tones",
+      "note": "Two skin tones side by side, recorded as V-Log",
+      "origin": "camera-vlog",
+      "before": "/sample/_before/vlog-skin.webp",
+      "beforeLog": "/sample/_before/vlog-skin-log.webp",
+      "beforeNeutral": "/sample/_before/vlog-skin-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/vlog-skin-before.png",
+        "sources/library/_samples/vlog-skin-before-vlog.png"
+      ]
+    },
+    {
+      "id": "vlog-interior",
+      "name": "S5II car interior",
+      "note": "Dark interior against bright windows, recorded as V-Log",
+      "origin": "camera-vlog",
+      "before": "/sample/_before/vlog-interior.webp",
+      "beforeLog": "/sample/_before/vlog-interior-log.webp",
+      "beforeNeutral": "/sample/_before/vlog-interior-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/vlog-interior-before.png",
+        "sources/library/_samples/vlog-interior-before-vlog.png"
+      ]
+    },
+    {
+      "id": "huts",
+      "name": "Beach huts",
+      "note": "Painted panels at full saturation, the strongest real colour in the set",
+      "origin": "camera-vlog",
+      "before": "/sample/_before/huts.webp",
+      "beforeLog": "/sample/_before/huts-log.webp",
+      "beforeNeutral": "/sample/_before/huts-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/huts-before.png",
+        "sources/library/_samples/huts-before-vlog.png"
+      ]
+    },
+    {
+      "id": "mural",
+      "name": "Mural & skin",
+      "note": "Saturated paint and a face in one frame, which no other frame has together",
+      "origin": "camera-vlog",
+      "before": "/sample/_before/mural.webp",
+      "beforeLog": "/sample/_before/mural-log.webp",
+      "beforeNeutral": "/sample/_before/mural-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/mural-before.png",
+        "sources/library/_samples/mural-before-vlog.png"
+      ]
+    },
+    {
+      "id": "scooter",
+      "name": "Chrome & red",
+      "note": "Polished metal against a deep red — the only specular highlights here",
+      "origin": "camera-vlog",
+      "before": "/sample/_before/scooter.webp",
+      "beforeLog": "/sample/_before/scooter-log.webp",
+      "beforeNeutral": "/sample/_before/scooter-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/scooter-before.png",
+        "sources/library/_samples/scooter-before-vlog.png"
+      ]
+    },
+    {
+      "id": "sunwall",
+      "name": "Hard sun on wood",
+      "note": "Direct sun and deep shadow on a weathered surface",
+      "origin": "camera-vlog",
+      "before": "/sample/_before/sunwall.webp",
+      "beforeLog": "/sample/_before/sunwall-log.webp",
+      "beforeNeutral": "/sample/_before/sunwall-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/sunwall-before.png",
+        "sources/library/_samples/sunwall-before-vlog.png"
+      ]
+    },
+    {
+      "id": "harbour",
+      "name": "Portrait in harbour light",
+      "note": "Skin against bright water, the widest contrast of any portrait here",
+      "origin": "camera-vlog",
+      "before": "/sample/_before/harbour.webp",
+      "beforeLog": "/sample/_before/harbour-log.webp",
+      "beforeNeutral": "/sample/_before/harbour-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/harbour-before.png",
+        "sources/library/_samples/harbour-before-vlog.png"
+      ]
+    },
+    {
+      "id": "pier",
+      "name": "Pier crowd",
+      "note": "Several skin tones at distance in low winter sun",
+      "origin": "camera-vlog",
+      "before": "/sample/_before/pier.webp",
+      "beforeLog": "/sample/_before/pier-log.webp",
+      "beforeNeutral": "/sample/_before/pier-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/pier-before.png",
+        "sources/library/_samples/pier-before-vlog.png"
+      ]
+    },
+    {
+      "id": "phbl09",
+      "name": "S9 street 09",
+      "note": "LUMIX S9, 20-60mm",
+      "origin": "raw",
+      "before": "/sample/_before/phbl09.webp",
+      "beforeLog": "/sample/_before/phbl09-log.webp",
+      "beforeNeutral": "/sample/_before/phbl09-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/phbl09-before.png",
+        "sources/library/_samples/phbl09-before-vlog.png"
+      ]
+    },
+    {
+      "id": "phbl10",
+      "name": "S9 street 10",
+      "note": "LUMIX S9, 20-60mm",
+      "origin": "raw",
+      "before": "/sample/_before/phbl10.webp",
+      "beforeLog": "/sample/_before/phbl10-log.webp",
+      "beforeNeutral": "/sample/_before/phbl10-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/phbl10-before.png",
+        "sources/library/_samples/phbl10-before-vlog.png"
+      ]
+    },
+    {
+      "id": "phbl11",
+      "name": "S9 street 11",
+      "note": "LUMIX S9, 20-60mm",
+      "origin": "raw",
+      "before": "/sample/_before/phbl11.webp",
+      "beforeLog": "/sample/_before/phbl11-log.webp",
+      "beforeNeutral": "/sample/_before/phbl11-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/phbl11-before.png",
+        "sources/library/_samples/phbl11-before-vlog.png"
+      ]
+    },
+    {
+      "id": "phbl21",
+      "name": "S9 street 21",
+      "note": "LUMIX S9, 20-60mm",
+      "origin": "raw",
+      "before": "/sample/_before/phbl21.webp",
+      "beforeLog": "/sample/_before/phbl21-log.webp",
+      "beforeNeutral": "/sample/_before/phbl21-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/phbl21-before.png",
+        "sources/library/_samples/phbl21-before-vlog.png"
+      ]
+    },
+    {
+      "id": "phbl24",
+      "name": "S9 street 24",
+      "note": "LUMIX S9, 20-60mm",
+      "origin": "raw",
+      "before": "/sample/_before/phbl24.webp",
+      "beforeLog": "/sample/_before/phbl24-log.webp",
+      "beforeNeutral": "/sample/_before/phbl24-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/phbl24-before.png",
+        "sources/library/_samples/phbl24-before-vlog.png"
+      ]
+    },
+    {
+      "id": "phbl27",
+      "name": "S9 street 27",
+      "note": "LUMIX S9, 20-60mm",
+      "origin": "raw",
+      "before": "/sample/_before/phbl27.webp",
+      "beforeLog": "/sample/_before/phbl27-log.webp",
+      "beforeNeutral": "/sample/_before/phbl27-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/phbl27-before.png",
+        "sources/library/_samples/phbl27-before-vlog.png"
+      ]
+    },
+    {
+      "id": "phbl29",
+      "name": "S9 street 29",
+      "note": "LUMIX S9, 20-60mm",
+      "origin": "raw",
+      "before": "/sample/_before/phbl29.webp",
+      "beforeLog": "/sample/_before/phbl29-log.webp",
+      "beforeNeutral": "/sample/_before/phbl29-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/phbl29-before.png",
+        "sources/library/_samples/phbl29-before-vlog.png"
+      ]
+    },
+    {
+      "id": "phbl30",
+      "name": "S9 street 30",
+      "note": "LUMIX S9, 20-60mm",
+      "origin": "raw",
+      "before": "/sample/_before/phbl30.webp",
+      "beforeLog": "/sample/_before/phbl30-log.webp",
+      "beforeNeutral": "/sample/_before/phbl30-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/phbl30-before.png",
+        "sources/library/_samples/phbl30-before-vlog.png"
+      ]
+    },
+    {
+      "id": "phbl33",
+      "name": "S9 street 33",
+      "note": "LUMIX S9, 20-60mm",
+      "origin": "raw",
+      "before": "/sample/_before/phbl33.webp",
+      "beforeLog": "/sample/_before/phbl33-log.webp",
+      "beforeNeutral": "/sample/_before/phbl33-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/phbl33-before.png",
+        "sources/library/_samples/phbl33-before-vlog.png"
+      ]
+    },
+    {
+      "id": "phbl36",
+      "name": "S9 street 36",
+      "note": "LUMIX S9, 20-60mm",
+      "origin": "raw",
+      "before": "/sample/_before/phbl36.webp",
+      "beforeLog": "/sample/_before/phbl36-log.webp",
+      "beforeNeutral": "/sample/_before/phbl36-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/phbl36-before.png",
+        "sources/library/_samples/phbl36-before-vlog.png"
+      ]
+    },
+    {
+      "id": "phbl37",
+      "name": "S9 street 37",
+      "note": "LUMIX S9, 20-60mm",
+      "origin": "raw",
+      "before": "/sample/_before/phbl37.webp",
+      "beforeLog": "/sample/_before/phbl37-log.webp",
+      "beforeNeutral": "/sample/_before/phbl37-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/phbl37-before.png",
+        "sources/library/_samples/phbl37-before-vlog.png"
+      ]
+    },
+    {
+      "id": "phbl38",
+      "name": "S9 street 38",
+      "note": "LUMIX S9, 20-60mm",
+      "origin": "raw",
+      "before": "/sample/_before/phbl38.webp",
+      "beforeLog": "/sample/_before/phbl38-log.webp",
+      "beforeNeutral": "/sample/_before/phbl38-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/phbl38-before.png",
+        "sources/library/_samples/phbl38-before-vlog.png"
+      ]
+    },
+    {
+      "id": "phbl39",
+      "name": "S9 street 39",
+      "note": "LUMIX S9, 20-60mm",
+      "origin": "raw",
+      "before": "/sample/_before/phbl39.webp",
+      "beforeLog": "/sample/_before/phbl39-log.webp",
+      "beforeNeutral": "/sample/_before/phbl39-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/phbl39-before.png",
+        "sources/library/_samples/phbl39-before-vlog.png"
+      ]
+    },
+    {
+      "id": "phbl40",
+      "name": "S9 street 40",
+      "note": "LUMIX S9, 20-60mm",
+      "origin": "raw",
+      "before": "/sample/_before/phbl40.webp",
+      "beforeLog": "/sample/_before/phbl40-log.webp",
+      "beforeNeutral": "/sample/_before/phbl40-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/phbl40-before.png",
+        "sources/library/_samples/phbl40-before-vlog.png"
+      ]
+    },
+    {
+      "id": "s9-street2",
+      "name": "S9 street, 26mm",
+      "note": "LUMIX S9",
+      "origin": "raw",
+      "before": "/sample/_before/s9-street2.webp",
+      "beforeLog": "/sample/_before/s9-street2-log.webp",
+      "beforeNeutral": "/sample/_before/s9-street2-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/s9-street2-before.png",
+        "sources/library/_samples/s9-street2-before-vlog.png"
+      ]
+    },
+    {
+      "id": "s9-wide",
+      "name": "S9 wide, 14mm",
+      "note": "LUMIX S9",
+      "origin": "raw",
+      "before": "/sample/_before/s9-wide.webp",
+      "beforeLog": "/sample/_before/s9-wide-log.webp",
+      "beforeNeutral": "/sample/_before/s9-wide-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/s9-wide-before.png",
+        "sources/library/_samples/s9-wide-before-vlog.png"
+      ]
+    },
+    {
+      "id": "s9-wide2",
+      "name": "S9 wide, 14mm (2)",
+      "note": "LUMIX S9",
+      "origin": "raw",
+      "before": "/sample/_before/s9-wide2.webp",
+      "beforeLog": "/sample/_before/s9-wide2-log.webp",
+      "beforeNeutral": "/sample/_before/s9-wide2-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/s9-wide2-before.png",
+        "sources/library/_samples/s9-wide2-before-vlog.png"
+      ]
+    },
+    {
+      "id": "s1rii02",
+      "name": "S1RII 02",
+      "note": "LUMIX S1RII, 70-300mm",
+      "origin": "raw",
+      "before": "/sample/_before/s1rii02.webp",
+      "beforeLog": "/sample/_before/s1rii02-log.webp",
+      "beforeNeutral": "/sample/_before/s1rii02-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/s1rii02-before.png",
+        "sources/library/_samples/s1rii02-before-vlog.png"
+      ]
+    },
+    {
+      "id": "s1rii11",
+      "name": "S1RII 11",
+      "note": "LUMIX S1RII, 70-300mm",
+      "origin": "raw",
+      "before": "/sample/_before/s1rii11.webp",
+      "beforeLog": "/sample/_before/s1rii11-log.webp",
+      "beforeNeutral": "/sample/_before/s1rii11-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/s1rii11-before.png",
+        "sources/library/_samples/s1rii11-before-vlog.png"
+      ]
+    },
+    {
+      "id": "s1rii24",
+      "name": "S1RII 24",
+      "note": "LUMIX S1RII, 70-300mm",
+      "origin": "raw",
+      "before": "/sample/_before/s1rii24.webp",
+      "beforeLog": "/sample/_before/s1rii24-log.webp",
+      "beforeNeutral": "/sample/_before/s1rii24-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/s1rii24-before.png",
+        "sources/library/_samples/s1rii24-before-vlog.png"
+      ]
+    },
+    {
+      "id": "s1rii25",
+      "name": "S1RII 25",
+      "note": "LUMIX S1RII, 70-300mm",
+      "origin": "raw",
+      "before": "/sample/_before/s1rii25.webp",
+      "beforeLog": "/sample/_before/s1rii25-log.webp",
+      "beforeNeutral": "/sample/_before/s1rii25-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/s1rii25-before.png",
+        "sources/library/_samples/s1rii25-before-vlog.png"
+      ]
+    },
+    {
+      "id": "s1rii28",
+      "name": "S1RII 28",
+      "note": "LUMIX S1RII, 70-300mm",
+      "origin": "raw",
+      "before": "/sample/_before/s1rii28.webp",
+      "beforeLog": "/sample/_before/s1rii28-log.webp",
+      "beforeNeutral": "/sample/_before/s1rii28-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/s1rii28-before.png",
+        "sources/library/_samples/s1rii28-before-vlog.png"
+      ]
+    },
+    {
+      "id": "reference",
+      "name": "Colour reference",
+      "note": "Hues, a neutral ramp, skin and memory colours, and specular patches above white",
+      "origin": "generated",
+      "before": "/sample/_before/reference.webp",
+      "beforeLog": "/sample/_before/reference-log.webp",
+      "beforeNeutral": "/sample/_before/reference-neutral.webp",
+      "logMeasured": true,
+      "sources": [
+        "sources/library/_samples/reference-before.png",
+        "sources/library/_samples/reference-before-vlog.png"
+      ]
+    }
+  ]
+}
