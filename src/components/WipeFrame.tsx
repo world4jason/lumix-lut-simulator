@@ -35,7 +35,9 @@ export function WipeFrame({
       const frame = frameRef.current;
       if (!frame) return;
       const rect = frame.getBoundingClientRect();
-      onSplitChange(Math.min(1, Math.max(0, (clientX - rect.left) / rect.width)));
+      onSplitChange(
+        Math.min(1, Math.max(0, (clientX - rect.left) / rect.width)),
+      );
     },
     [onSplitChange],
   );
@@ -44,20 +46,26 @@ export function WipeFrame({
     <div
       ref={frameRef}
       className={active ? 'wipe' : 'wipe wipe-off'}
-      onPointerDown={(event) => {
-        if (!active) return;
-        event.currentTarget.setPointerCapture(event.pointerId);
-        moveTo(event.clientX);
-      }}
-      onPointerMove={(event) => {
-        if (!active) return;
-        if (event.currentTarget.hasPointerCapture(event.pointerId)) moveTo(event.clientX);
-      }}
     >
       {children}
       {active ? (
         <>
-          <div className="wipe-handle" style={{ left: `${split * 100}%` }} aria-hidden />
+          <div
+            className="wipe-handle-zone"
+            style={{ left: `${split * 100}%` }}
+            aria-hidden
+            onPointerDown={(event) => {
+              event.currentTarget.setPointerCapture(event.pointerId);
+              moveTo(event.clientX);
+            }}
+            onPointerMove={(event) => {
+              if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+                moveTo(event.clientX);
+              }
+            }}
+          >
+            <span className="wipe-handle" />
+          </div>
           <span className="wipe-tag wipe-tag-left">{leftTag}</span>
           <span className="wipe-tag wipe-tag-right">{rightTag}</span>
           <input

@@ -276,6 +276,11 @@ for (const viewport of viewports) {
       await page.getByRole("button", { name: "Close", exact: true }).click();
 
       await page.getByRole("button", { name: "LUT List", exact: true }).click();
+      if (viewport.touch) {
+        const mobileMode = page.locator(".s9-mobile-mode");
+        await expect(mobileMode).toBeVisible();
+        await mobileMode.getByRole("tab", { name: "Arrange" }).click();
+      }
       const s9List = page.locator(".s9-list");
       await expect(s9List).toBeVisible();
       await expectInsideViewport(page, s9List);
@@ -308,7 +313,7 @@ for (const viewport of viewports) {
 
       await dragToSlot(
         page,
-        page.locator(`[data-s9-key="slot-1"] .s9-handle`),
+        page.locator('[data-s9-key="slot-1"] .s9-handle'),
         2,
         viewport.touch,
       );

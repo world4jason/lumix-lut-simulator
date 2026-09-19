@@ -11,7 +11,12 @@ import { renderUpload, type UploadedLut } from "../lib/uploads";
 import { changeS9, useS9 } from "../lib/s9";
 import { s9Location } from "../lib/s9-model";
 import { BeforeAfter } from "./BeforeAfter";
-import { GLOBAL_SAMPLES, FALLBACK_SAMPLE_ID, SampleStrip } from "./SampleStrip";
+import {
+  GLOBAL_SAMPLES,
+  FALLBACK_SAMPLE_ID,
+  SampleStrip,
+} from "./SampleStrip";
+
 export function LutDetail({
   lut,
   upload,
@@ -41,6 +46,7 @@ export function LutDetail({
   const location = s9Location(doc, lut.code);
   const sample = GLOBAL_SAMPLES.find((s) => s.id === choice);
   const picture = previewOf(lut, choice);
+
   useEffect(() => {
     const el = dialog.current;
     const previous = document.activeElement as HTMLElement | null;
@@ -50,11 +56,12 @@ export function LutDetail({
       previous?.focus();
     };
   }, []);
+
   useEffect(() => {
     let alive = true;
     setPreview(null);
     setError("");
-    if (upload)
+    if (upload) {
       void renderUpload(upload, choice)
         .then((url) => {
           if (alive) setPreview(url);
@@ -62,10 +69,12 @@ export function LutDetail({
         .catch((e) => {
           if (alive) setError(String(e.message));
         });
+    }
     return () => {
       alive = false;
     };
   }, [upload, choice]);
+
   const logStyle =
     lut.photoStyle === "VLOG" || signalStyles.has(lut.photoStyle);
   const after = upload ? preview : asset(picture.after);
@@ -79,6 +88,11 @@ export function LutDetail({
       ? raw
       : beforeFrameFor(lut.photoStyle, sample.id)
     : picture.before;
+
+  const addLabel = location ?? "Add to LUT List";
+  const addDisabled = !ready || busy || !!location;
+  const addToList = () => void changeS9({ type: "add", code: lut.code });
+
   return (
     <dialog
       ref={dialog}
@@ -92,8 +106,9 @@ export function LutDetail({
             event.clientX > r.right ||
             event.clientY < r.top ||
             event.clientY > r.bottom
-          )
+          ) {
             onClose();
+          }
         }
       }}
       aria-label={`${lut.title} LUT details`}
@@ -109,6 +124,17 @@ export function LutDetail({
           Close
         </button>
       </div>
+
+      <div className="detail-mobile-action">
+        <button
+          className="primary detail-mobile-primary"
+          disabled={addDisabled}
+          onClick={addToList}
+        >
+          {addLabel}
+        </button>
+      </div>
+
       <div className="detail-body">
         <section>
           {error ? (
@@ -131,12 +157,14 @@ export function LutDetail({
           ) : (
             <p role="status">Generating local preview…</p>
           )}
+
           <SampleStrip
             id={choice}
             onChange={setChoice}
             lut={lut}
             includeOwn={!upload}
           />
+
           {sample && logStyle ? (
             <label className="toggle before-mode">
               <input
@@ -147,6 +175,7 @@ export function LutDetail({
               Compare raw {photoStyleLabel(lut.photoStyle)} signal
             </label>
           ) : null}
+
           <p className="fineprint">
             {sample
               ? `${sample.name} · ${sample.note}`
@@ -161,12 +190,16 @@ export function LutDetail({
                   ? "No official before image is available; only after is shown."
                   : "Before and after belong to the same official sample."}
           </p>
+
           {lut.clamp?.nodes ? (
             <p className="note">
-              This LUT contains values outside the 8-bit display range. The preview clips those values and does not represent floating-point grading output.
+              This LUT contains values outside the 8-bit display range. The
+              preview clips those values and does not represent floating-point
+              grading output.
             </p>
           ) : null}
         </section>
+
         <aside>
           <p className="overview">{lut.overview}</p>
           <dl className="facts">
@@ -184,11 +217,11 @@ export function LutDetail({
             </div>
           </dl>
           <button
-            className="primary"
-            disabled={!ready || busy || !!location}
-            onClick={() => void changeS9({ type: "add", code: lut.code })}
+            className="primary detail-primary"
+            disabled={addDisabled}
+            onClick={addToList}
           >
-            {location ?? "Add to LUT List"}
+            {addLabel}
           </button>
         </aside>
       </div>
